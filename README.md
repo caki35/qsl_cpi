@@ -29,3 +29,8 @@ This script saves amino acid sequences of all given protein KEGG ids into `prote
 python scripts/download_data.py Data/Compounds/gpcr/kegg_id.txt compound 
 ```
 This script saves the structure information of all given compound KEGG ids into `kegg_mol` folder in .mol file format.
+
+### Generating SMILES strings
+You can convert mol files of compounds into using `scripts/smiles_converter.sh`  
+It require [molconverter console program of JCHEM](https://chemaxon.com/products/jchem-engines/download#jchem)
+
