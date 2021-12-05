@@ -32,5 +32,5 @@ This script saves the structure information of all given compound KEGG ids into 
 
 ### Generating SMILES strings
 You can convert mol files of compounds into using `scripts/smiles_converter.sh`  
-It require [molconverter console program of JCHEM](https://chemaxon.com/products/jchem-engines/download#jchem)
+It requires [molconverter console program of JCHEM](https://chemaxon.com/products/jchem-engines/download#jchem)
 
