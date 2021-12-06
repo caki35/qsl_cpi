@@ -7,7 +7,7 @@ Our study based on the machine learning strategy presented in following paper:
 
 If you use this repo or QSL algorithm itself in your work, please cite these two papers given above.
 
-### Highlights of our learning algorithm:
+### Highlights of our method:
 - Compound-Protein pairs at hand are divided into two datasets (C0 and C1):
   - C1 consists of the true postive samples. (experimentally validated interactions)
   - C0 consists of unlabeled samples. (compound-protein pairs that do not have a documented interaction)
@@ -32,5 +32,7 @@ This script saves the structure information of all given compound KEGG ids into 
 
 ### Generating SMILES strings
 You can convert mol files of compounds into using `scripts/smiles_converter.sh`  
-It requires [molconverter console program of JCHEM](https://chemaxon.com/products/jchem-engines/download#jchem)
-
+It requires [molconverter console program of JCHEM](https://chemaxon.com/products/jchem-engines/download#jchem). You must install this program and provide its sysytem path into `scripts/smiles_converter.sh`
+```
+bash scripts/smiles_converter.sh Data/kegg_mol
+```
