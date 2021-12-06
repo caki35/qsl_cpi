@@ -69,10 +69,14 @@ To calculate similarity between compounds using their fingerprints, run followin
 - 'MACCS': Molecular ACCess System
 
 ```
-python kernels/compound_fingerprint_kernels.py Data/Compounds/GPCR/GPCR_kegg_mol ECFP4
+python kernels/compound_fingerprint_kernels.py Data/Compounds/GPCR/kegg_mol ECFP4
 ```
 
 The results will be saved into `Similarity_Matrices` in .csv file format.
 
 ### Protein-Protein Similarity Measure
-
+Run the following script to construct a similarity matrix for proteins using Smith-Waterman Algorithm. You need to input`.fasta` file that contains amino acid sequences of all proteins.
+```
+python kernels/protein_seq_kernel.py Data/Proteins/gpcr/gpcr_protein.fasta
+```
+## Run QSL algorithm
