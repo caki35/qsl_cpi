@@ -18,16 +18,18 @@ If you use this repo or QSL algorithm itself in your work, please cite these two
 - QSL operates on similarity structure between protein and compound pairs directly without requiring a feature vector representation.
 
 ## Installation
-'''bash
+
+```bash
 git clone https://github.com/caki35/qsl_cpi.git
 cd qsl_cpi
-'''
-Istallation using conda 
+```
+
+Istallation using conda:
 ```bash
 conda create --name qsl_cpi --file requirements_conda_env.txt
 conda activate qsl_cpi
 ```
-Istallation using pip 
+Istallation using pip:
 ```bash
 pip install requirements.txt
 ```
