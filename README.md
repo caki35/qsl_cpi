@@ -18,6 +18,19 @@ If you use this repo or QSL algorithm itself in your work, please cite these two
 - QSL operates on similarity structure between protein and compound pairs directly without requiring a feature vector representation.
 
 ## Installation
+'''bash
+git clone https://github.com/caki35/qsl_cpi.git
+cd qsl_cpi
+'''
+Istallation using conda 
+```bash
+conda create --name qsl_cpi --file requirements_conda_env.txt
+conda activate qsl_cpi
+```
+Istallation using pip 
+```bash
+pip install requirements.txt
+```
 
 ## Download Data
 We provide a script `scripts/download_data.py` for retrieving either compound or protein data from KEGG databases. You need just give a txt file including id list of the data that you want to download.  
