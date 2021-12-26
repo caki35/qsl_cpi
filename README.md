@@ -76,7 +76,7 @@ To calculate similarity between compound graphs in .mol file, run following scri
 ```bash
 python kernels/compound_graph_kernel.py Data/Compounds/GPCR/GPCR_kegg_mol
 ```
-**Molecular-Fingerprints Kernel**  
+**Molecular-Fingerprints Kernels**  
 To calculate similarity between compounds using their fingerprints, run following script with folder path including .mol files. You must choose one of the fingerprint options:
 - 'KCFS' : KEGG Chemical Function and Substructures
 - 'ECFP4': Extended-Connectivity Fingerprints
@@ -92,7 +92,7 @@ The results will be saved into `Similarity_Matrices` in .csv file format.
 ### Protein-Protein Similarity Measure
 Run the following script to construct a similarity matrix for proteins using Smith-Waterman Algorithm. You need to input`.fasta` file that contains amino acid sequences of all proteins.
 ```bash
-python kernels/protein_seq_kernel.py Data/Proteins/GPCR/GPCR_protein.fasta
+python kernels/protein_seq_kernel.py FASTA_FILE_PATH
 ```
 ## Run QSL algorithm
 ```bash
