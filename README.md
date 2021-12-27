@@ -24,24 +24,24 @@ git clone https://github.com/caki35/qsl_cpi.git
 cd qsl_cpi
 ```
 
-Istallation using conda:
+Istallation using conda (only for Windows):
 ```bash
 conda create --name qsl_cpi --file requirements_conda_env.txt
 conda activate qsl_cpi
 ```
-Istallation using pip:
+Istallation using pip (Windows, Linux or MacOS):
 ```bash
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 ## Download Data
 We provide a script `scripts/download_data.py` for retrieving either compound or protein data from KEGG databases. You need just give a txt file including id list of the data that you want to download.  
 ```bash
-python scripts/download_data.py Data/Proteins/gpcr/kegg_id.txt protein
+python scripts/download_data.py Data/Proteins/GPCR/kegg_id.txt protein
 ```
 This script saves amino acid sequences of all given protein KEGG ids into a unified file named `protein.fasta`.
 ```bash
-python scripts/download_data.py Data/Compounds/gpcr/kegg_id.txt compound 
+python scripts/download_data.py Data/Compounds/GPCR/kegg_id.txt compound 
 ```
 This script saves the structure information of all given compound KEGG ids into `kegg_mol` folder in .mol file format.
 
