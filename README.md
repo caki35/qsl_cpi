@@ -106,6 +106,7 @@ The detailed of `config.yml`:
 `n_range`: The range of *n* which is the main parameter that QSL optimizes.  
 `grid_search_optimizer`: if **True**, the algorithm performs grid search during finding the best *n* instead of considering each *n* in range.  
 `single_n_flag`: if **True**, QSL algorithm runs at a certain  *n* instead of optimizing it. 
+`trivial_names`: if **True**, the KEGG IDs in results will be converted into their trivial names.
 
 ```yaml
 qsl:
@@ -118,6 +119,7 @@ qsl:
   single_n:
     single_n_flag: False
     n: 21
+  trivial_names: True
 ```
 
 The result folder will contain 4 files:
