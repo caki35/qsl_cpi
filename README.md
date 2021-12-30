@@ -105,7 +105,7 @@ The detailed of `config.yml`:
 `interaction_info`: The path of .txt file including interaction information at hand.  
 `n_range`: The range of *n* which is the main parameter that QSL optimizes.  
 `grid_search_optimizer`: if **True**, the algorithm performs grid search during finding the best *n* instead of considering each *n* in range.  
-`single_n_flag`: if **True**, QSL algorithm runs at a certain  *n* instead of optimizing it. 
+`single_n_flag`: if **True**, QSL algorithm runs at a certain  *n* instead of optimizing it.  
 `trivial_names`: if **True**, the KEGG IDs in results will be converted into their trivial names.
 
 ```yaml
