@@ -84,7 +84,7 @@ To calculate similarity scores between compounds using their fingerprints, run f
 ```bash
 python kernels/compound_fingerprint_kernels.py MOL_FOLDER_PATH ECFP4
 ```
-NOTE: To use KCFS, you must install [KCF-Convoy](https://github.com/KCF-Convoy/kcfconvoy)
+NOTE: To use KCFS, you must install [KCF-Convoy](https://github.com/KCF-Convoy/kcfconvoy).
 
 The results will be saved into `Similarity_Matrices` in .csv file format.
 
