@@ -5,7 +5,7 @@ This repo provides the codes used in the study on Quasi-Supervised Learning Algo
 Our study is based on the machine learning strategy presented in the following paper:
 - [Quasi-supervised learning for biomedical data analysis](https://www.sciencedirect.com/science/article/abs/pii/S0031320310002001)
 
-If you use this repo or QSL algorithm itself in your work, please cite these two papers given above.
+If you use this repo in your work, please cite these two papers given above.
 
 ### Highlights of our method:
 - Compound-Protein pairs at hand are divided into two datasets:
