@@ -24,13 +24,11 @@ git clone https://github.com/caki35/qsl_cpi.git
 cd qsl_cpi
 ```
 
-Istallation using conda (only for Windows):
+Istallation using conda:
 ```bash
-conda create --name qsl_cpi --file requirements_conda_env.txt
+conda create --name qsl_cpi python=3.8
 conda activate qsl_cpi
-```
-Istallation using pip (Windows, Linux or MacOS):
-```bash
+conda install -c conda-forge rdkit
 pip install -r requirements.txt
 ```
 
@@ -86,10 +84,11 @@ To calculate similarity between compounds using their fingerprints, run followin
 ```bash
 python kernels/compound_fingerprint_kernels.py MOL_FOLDER_PATH ECFP4
 ```
+NOTE: To use KCFS, you must install [KCF-Convoy](https://github.com/KCF-Convoy/kcfconvoy)
 
 The results will be saved into `Similarity_Matrices` in .csv file format.
 
-### Protein-Protein Similarity Measure
+### Protein-Protein Similarity Measurement
 Run the following script to construct a similarity matrix for proteins using Smith-Waterman Algorithm. You need to input`.fasta` file that contains amino acid sequences of all proteins.
 ```bash
 python kernels/protein_seq_kernel.py FASTA_FILE_PATH
@@ -131,10 +130,10 @@ The result folder will contain 4 files:
 
 ![sample_distributions](https://user-images.githubusercontent.com/61325251/147421589-4ed34eb2-7a82-40db-9e3f-ccc98378d5c1.png)
 
-Cost function when grid search open.
+Cost function when grid is search opened.
 ![cost_function](https://user-images.githubusercontent.com/61325251/147421598-577f7fd6-3290-467f-b54b-02aac0c9eefb.png)
 
-Cost function when grid search close.
+Cost function when grid search is closed.
 ![cost_function](https://user-images.githubusercontent.com/61325251/147422122-70dfe22d-f464-41eb-a194-e473cb6c6f0d.png)
 
 
