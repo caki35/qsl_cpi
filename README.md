@@ -70,7 +70,7 @@ To calculate similarity between SMILES pairs, run following script with folder p
 python kernels/compound_smiles_kernels.py SMILES_FOLDER_PATH LINGO4TF
 ```
 **Graph Kernel**  
-To calculate similarity between compound graphs in .mol file, run following script with folder path including .mol files.
+To calculate similarity between compound using their graph representations, run following script with folder path including .mol files.
 ```bash
 python kernels/compound_graph_kernel.py Data/Compounds/GPCR/GPCR_kegg_mol
 ```
