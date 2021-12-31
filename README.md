@@ -53,7 +53,7 @@ bash scripts/smiles_converter.sh MOL_FOLDER_PATH
 All .mol files in given folder are converted into SMILES representation and saved into folder `smiles_output`.
 
 ## Similarity Calculation 
-To use QSL for CPI prediction, you must construct similarity matrices for both compound and protein data first. We provide various options to do so. If you have your own similarity matrices, you can pass this step.
+To use QSL for CPI prediction, you must construct similarity matrices for both compound and protein data first. We provide various options to that end. If you have your own similarity matrices, you can pass this step.
 ### Compound-Compound Similarity Measure
 
 **SMILES Kernels**  
