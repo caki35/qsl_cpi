@@ -1,0 +1,13 @@
+,Unnamed: 0,Compound,Protein,Posterior Probability
+0,Rank 1,Nandrolone phenpropionate,estrogen receptor 1,0.9442025829999999
+1,Rank 2,Norethindrone,estrogen receptor 1,0.9322794329999999
+2,Rank 3,Oxandrolone,progesterone receptor,0.931947285
+3,Rank 4,Spironolactone,progesterone receptor,0.929143662
+4,Rank 5,Fluoxymesterone,progesterone receptor,0.9265833170000001
+5,Rank 6,Eplerenone,progesterone receptor,0.92461817
+6,Rank 7,Testosterone,progesterone receptor,0.918723231
+7,Rank 8,Hydrocortisone,progesterone receptor,0.9185730609999999
+8,Rank 9,Isotretinoin,retinoic acid receptor beta,0.9127444790000001
+9,Rank 10,Testosterone,estrogen receptor 1,0.912713579
+10,Rank 11,Nandrolone phenpropionate,progesterone receptor,0.911311322
+11,Rank 12,Tazarotene,peroxisome proliferator activated receptor alpha,0.908772342

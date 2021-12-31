@@ -1,0 +1,11 @@
+qsl:
+  save_dir: results #the directory to which the results are saved
+  compound_similarity_matrix: Similarity_Matrices/Nuclear_Receptor/compound_fp_KCFS.csv
+  protein_similarity_matrix: Similarity_Matrices/Nuclear_Receptor/protein_NSWA_nr.csv
+  interaction_info: Data/interaction_data_nr.txt
+  n_range: [1,50]
+  grid_search_optimizer: True
+  single_n:
+    single_n_flag: False
+    n: 21
+  trivial_names: True
