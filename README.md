@@ -57,7 +57,7 @@ To use QSL for CPI prediction, you must construct similarity matrices for both c
 ### Compound-Compound Similarity Measure
 
 **SMILES Kernels**  
-To calculate similarity between SMILES pairs, run following script with folder path including SMILES files. You must choose one of the kernel options:
+To calculate similarity scores between SMILES pairs, run following script with folder path including SMILES files. You must choose one of the kernel options:
 - 'NLCS' : Normalized Longest Common Subsequence (NLCS)
 - 'CLCS' : Combination of Longest Common Subsequence Models (CLCS)
 - 'LINGO3': LINGO-3 Similarity
@@ -70,12 +70,12 @@ To calculate similarity between SMILES pairs, run following script with folder p
 python kernels/compound_smiles_kernels.py SMILES_FOLDER_PATH LINGO4TF
 ```
 **Graph Kernel**  
-To calculate similarity between compound using their graph representations, run following script with folder path including .mol files.
+To calculate similarity scores between compounds using their graph representations, run following script with folder path including .mol files.
 ```bash
 python kernels/compound_graph_kernel.py Data/Compounds/GPCR/GPCR_kegg_mol
 ```
 **Molecular-Fingerprints Kernels**  
-To calculate similarity between compounds using their fingerprints, run following script with folder path including .mol files. You must choose one of the fingerprint options:
+To calculate similarity scores between compounds using their fingerprints, run following script with folder path including .mol files. You must choose one of the fingerprint options:
 - 'KCFS' : KEGG Chemical Function and Substructures
 - 'ECFP4': Extended-Connectivity Fingerprints
 - 'FCFP4': FunctionalClass Fingerprintsx
