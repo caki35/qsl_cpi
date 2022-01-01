@@ -54,7 +54,7 @@ All .mol files in given folder are converted into SMILES representation and save
 
 ## Similarity Calculation 
 To use QSL for CPI prediction, you must construct similarity matrices for both compound and protein data first. We provide various options to that end. If you have your own similarity matrices, you can pass this step.
-### Compound-Compound Similarity Measure
+### Compound-Compound Similarity Measurement
 
 **SMILES Kernels**  
 To calculate similarity scores between SMILES pairs, run following script with folder path including SMILES files. You must choose one of the kernel options:
