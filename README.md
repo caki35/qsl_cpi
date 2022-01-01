@@ -130,7 +130,7 @@ The result folder will contain 4 files:
 
 ![sample_distributions](https://user-images.githubusercontent.com/61325251/147421589-4ed34eb2-7a82-40db-9e3f-ccc98378d5c1.png)
 
-Cost function when grid is search opened.
+Cost function when grid search is opened.
 ![cost_function](https://user-images.githubusercontent.com/61325251/147421598-577f7fd6-3290-467f-b54b-02aac0c9eefb.png)
 
 Cost function when grid search is closed.
