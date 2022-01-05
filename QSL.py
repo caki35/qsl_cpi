@@ -1,25 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-This module was developed to predict potential interactions between drug-target 
-pairs by using similarity between drugs, and similarity between targets, 
-and known interaction information of some pairs.  
-
-Usage: python qsl.py -d similarity_matrix_drug.csv -t similarity_matrix_drug.csv -i interaction_information
-
-Inputs Arguments:
-    Similarity Matrix consists of similarities between drugs
-    Similarity Matrix consists of similarities between target
-    The list of known interactions between drug-target pairs at hand
-
-
-Outputs:
-The function returns two images in png format and one csv file
-    sample_distributions.png: posterior distributions of the pairs to interact 
-                              and the result of kolmogorov smirnov test
-    cost_function.png: the change of cost by n
-    results.csv: the list of potential interactions that QSL suggest
-    
-
+"""  
 @author: Onur Caki
 """
 
@@ -195,7 +175,7 @@ def QSL_algorithm(similarity_matrix, label_data, nrange):
                           Its indices and columns name must be same
     label_data        --> It's also dataframe where the last column consist of label of instances
                           The index name, or numbers in label_data must be same with the similarity_matrix 
-    nmax              --> maximum number of sample are taken each class to construct reference sets
+    nrane             --> the range of number of sample are taken each class to construct reference sets
     --------------------------------------------------------------------------
     Returns dictionary output that contains following elements:
     n_list: evaluated list of n (1,2,...,nmax)
@@ -288,19 +268,7 @@ def n_list_generator(min_n1, min_n2, n_steps):
 
 def QSL_algorithm_speed_up(similarity_matrix, label_data, nrange):
     '''
-    it's takes three inputs:
-    similarity_matrix --> Similarity values between instances
-                          It must be in dataframe format. 
-                          Its indices and columns name must be same
-    label_data        --> It's also dataframe where the last column consist of label of instances
-                          The index name, or numbers in label_data must be same with the similarity_matrix 
-    nmax              --> maximum number of sample are taken each class to construct reference sets
-    --------------------------------------------------------------------------
-    Returns dictionary output that contains following elements:
-    n_list: evaluated list of n 
-    cost: calculated cost of which we use each n in n_list
-    f0: posterior probabilities of which each samples belong to C0 when we use the n with minimum cost
-    f1: posterior probabilities of which each samples belong to C1 when we use the n with minimum cost
+    Same with QSL but grid search is used to find best n with minimum cost
     '''
     import collections
 
@@ -422,11 +390,10 @@ def QSL_algorithm_single_n(similarity_matrix, label_data, n_optimum):
                           Its indices and columns name must be same
     label_data        --> It's also dataframe where the last column consist of label of instances
                           The index name, or numbers in label_data must be same with the similarity_matrix 
-    nmax              --> maximum number of sample are taken each class to construct reference sets
+    n                 --> number of sample are taken each class to construct reference sets
     --------------------------------------------------------------------------
     Returns dictionary output that contains following elements:
-    n_list: evaluated list of n 
-    cost: calculated cost of which we use each n in n_list
+    n: evaluated list of n 
     f0: posterior probabilities of which each samples belong to C0 when we use the n with minimum cost
     f1: posterior probabilities of which each samples belong to C1 when we use the n with minimum cost
     '''
